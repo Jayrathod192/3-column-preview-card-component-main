@@ -80,11 +80,13 @@ body {
     text-decoration: none;
     display: inline-block;
     font-weight: 500;
+    animation: all 0.3s;
 }
 
 .btn:hover,
 .btn:active{
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
+    box-shadow: inset 0 0 0 2px #fff;
     color: hsl(0, 0%, 95%);
 }
 
