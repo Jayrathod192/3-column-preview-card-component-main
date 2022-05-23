@@ -19,6 +19,8 @@ body {
     font-size: 15px;
     color: #fff;
 }
+
+/*  grid-3-cols */
 .grid-3-cols {
     display: grid;
     grid-template-columns: repeat(3, 1fr);    
@@ -27,6 +29,11 @@ body {
 
 .grid-3-cols  div{
     padding: 50px;
+}
+
+.grid-3-cols div .btn:nth-child(1)
+{
+    color: var(--bright-orange);
 }
 
 .grid-3-cols div:nth-child(1){
@@ -42,6 +49,8 @@ body {
 }
 
 
+
+/* car box style */
 
 .car-title {
     font-size: 32px;
@@ -60,6 +69,8 @@ body {
     margin-bottom: 64px;
     color:  hsla(0, 0%, 100%, 0.75);
 }
+
+/* button style */
 
 .btn:link,
 .btn.visited{
@@ -87,7 +98,6 @@ body {
     color: var(--very-dark-cyan);
 }
 
-
 .btn-sedan:hover,
 .btn-sedan:active{
     background-color: var(--bright-orange);
@@ -106,10 +116,8 @@ body {
     color: hsl(0, 0%, 95%);
 }
 
-.grid-3-cols div .btn:nth-child(1)
-{
-    color: var(--bright-orange);
-}
+
+/* footer */
 
 .attribution{
     color: gray;
@@ -122,6 +130,8 @@ body {
     color: rgb(35, 35, 35);
     font-weight: 900;
 }
+
+/* mobile design  */
 
 @media screen and (max-width: 375px) {
 
