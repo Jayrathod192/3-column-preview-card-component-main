@@ -12,11 +12,13 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+}
 body {
     font-family: 'Lexend Deca',sans-serif;
     width: 960px;
     margin: 50px auto;
-    font-size: 15px;
     color: #fff;
 }
 
@@ -24,11 +26,11 @@ body {
 .grid-3-cols {
     display: grid;
     grid-template-columns: repeat(3, 1fr);    
-    
+    margin:10px;   
 }
 
 .grid-3-cols  div{
-    padding: 50px;
+    padding: 5rem;
 }
 
 .grid-3-cols div .btn:nth-child(1)
@@ -48,25 +50,23 @@ body {
     border-radius: 0 12px 12px 0; 
 }
 
-
-
 /* car box style */
 
 .car-title {
-    font-size: 32px;
-    margin-bottom: 24px;
+    font-size: 3.2rem;
+    margin-bottom: 2.4rem;
     color: hsl(0, 0%, 95%);
 }
 
 .car-icon{
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
 }
 
 .car-text {
-    font-size: 18px;
-    margin-bottom: 16px;
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
     line-height: 1.8;
-    margin-bottom: 64px;
+    margin-bottom: 6.4rem;
     color:  hsla(0, 0%, 100%, 0.75);
 }
 
@@ -75,8 +75,8 @@ body {
 .btn:link,
 .btn.visited{
     background-color: #fff;
-    padding: 16px 32px;
-    border-radius: 100px;
+    padding: 1.6rem 3.3rem;
+    border-radius: 10rem;
     text-decoration: none;
     display: inline-block;
     font-weight: 500;
@@ -123,8 +123,8 @@ body {
 
 .attribution{
     color: gray;
-    font-size: 16px;
-    margin-top: 18px;
+    font-size: 1.6rem;
+    margin-top: 1.8rem;
 }
 
 .attribution a{
@@ -135,23 +135,24 @@ body {
 
 /* mobile design  */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
 
     body{
         width: 100%;
-        margin: 50px auto;
+        margin: 5rem 1rem;
     }
      .grid-3-cols{
         display: grid;
         grid-template-columns: 90%;
-        margin: 0 20px 0 20px;
+        margin-left: 1rem;
+        margin-right: 1rem;
         width: 100%;
         grid-template-rows: repeat(3,1fr);
     }
     .grid-3-cols div:nth-child(1){
-        border-radius: 12px 12px 0 0; 
+        border-radius: 1.2rem 1.2rem 0 0; 
     }
     .grid-3-cols div:nth-child(3){
-        border-radius: 0 0 12px 12px; 
+        border-radius: 0 0 1.2rem 1.2rem; 
     }
   }
